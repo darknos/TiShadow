@@ -198,6 +198,7 @@ program.command('appify')
   .option('-r, --room <room>', 'set server room')
   .option('-m, --modify-app-id', 'appends .appifed to the applicatin id')
   .option('-P, --platform <platform>', 'target platform')
+  .option('-e, --esversion <version>', 'ECMAScript version')
   .action(require('./support/appify').build);
 
 program.command('express')
